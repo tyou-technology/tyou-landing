@@ -1,0 +1,28 @@
+// public/site.webmanifest
+{
+  "name": "T_YOU – Getting You Online",
+  "short_name": "T_YOU",
+  "description": "Modern web solutions for businesses. Fast, beautiful, and effective.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00a5b4",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "technology", "web development"],
+  "lang": "en",
+  "dir": "ltr"
+}
