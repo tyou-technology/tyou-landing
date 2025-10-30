@@ -104,7 +104,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-muted">
               {[
                 { label: "tyou.contato@gmail.com", href: "mailto:tyou.contato@gmail.com" },
-                { label: "+55 (18) 99797-0919", href: "tel:+5518997970919" },
+                // { label: "+55 (18) 99797-0919", href: "tel:+5518997970919" },
                 { label: "tyou.com.br", href: "https://tyou.com.br" },
                 { label: "@tyoutecnologia", href: "https://instagram.com/tyoutecnologia" },
               ].map((item, index) => (

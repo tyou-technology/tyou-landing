@@ -31,7 +31,7 @@ export function GeometricBackground() {
         }}
       />
       <motion.div
-        className="absolute bottom-20 right-10 w-96 h-96 border border-muted/10 rotate-45"
+        className="hidden lg:block absolute bottom-20 right-10 w-96 h-96 border border-muted/10 rotate-45"
         animate={{
           rotate: [45, 50, 45],
           y: [0, -20, 0],

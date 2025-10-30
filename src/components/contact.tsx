@@ -71,7 +71,7 @@ export function Contact() {
                                     value: "tyou.contato@gmail.com",
                                     href: "mailto:tyou.contato@gmail.com"
                                 },
-                                { icon: Phone, title: "Phone", value: "+55 (18) 99797-0919", href: "tel:+5518997970919" },
+                                // { icon: Phone, title: "Phone", value: "+55 (18) 99797-0919", href: "tel:+5518997970919" },
                                 {
                                     icon: InstagramIcon,
                                     title: "Social Media",

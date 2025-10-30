@@ -32,7 +32,8 @@ export function Header() {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <motion.div
+          <motion.a
+              href={"#hero"}
             className="flex items-center"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -45,7 +46,7 @@ export function Header() {
               height={40}
               className="h-8 w-auto"
             />
-          </motion.div>
+          </motion.a>
 
           {/* Desktop Navigation */}
           <motion.nav

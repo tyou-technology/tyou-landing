@@ -21,7 +21,7 @@ export function About() {
   return (
     <section id="about" className="py-24 lg:py-32 bg-secondary/5 relative overflow-hidden" ref={ref}>
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-1/2 h-full border-l border-border/50" />
+      <div className="hidden lg:block absolute top-0 right-0 w-1/2 h-full border-l border-border/50" />
 
       <div className="container mx-auto px-4 lg:px-8 relative">
         <div className="grid lg:grid-cols-2 gap-16 items-center">

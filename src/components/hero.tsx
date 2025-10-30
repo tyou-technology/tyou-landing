@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section id={"hero"} className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <GeometricBackground />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -53,7 +53,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.a href={"#services"} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
                   size="lg"
                   className="bg-primary text-primary-foreground hover:bg-[#00a5b4] group cursor-pointer transition-colors"
@@ -61,8 +61,8 @@ export function Hero() {
                   Discover Our Services
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </motion.div>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              </motion.a>
+              <motion.a href={"#projects"} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
                   size="lg"
                   variant="outline"
@@ -70,7 +70,7 @@ export function Hero() {
                 >
                   View Projects
                 </Button>
-              </motion.div>
+              </motion.a>
             </motion.div>
 
             {/* Stats */}
