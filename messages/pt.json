@@ -11,7 +11,7 @@
     "getStartedLinkMessage": "Olá, gostaria de saber mais sobre os seus serviços"
   },
   "Hero": {
-    "tagline": "Colocando você <highlight>on</highlight>line",
+    "tagline": "Deixando você <highlight>on</highlight>line",
     "title": "Transformando <highlight>Visões</highlight> em Realidade Digital",
     "description": "Desenvolvimento de software personalizado para impulsionar seu negócio. Construímos soluções escaláveis e inovadoras que geram resultados reais.",
     "ctaServices": "Conheça Nossos Serviços",
@@ -212,7 +212,7 @@
       }
     },
     "CTA": {
-      "title": "Pronto para Transformar Sua Agência?",
+      "title": "Pronto para Transformar Sua Imobiliária?",
       "description": "Junte-se a imobiliárias inovadoras que já usam IA para capturar mais leads e fechar mais negócios.",
       "button": "Saiba Mais",
       "ctaLinkMessage": "Eu gostaria de saber mais sobre o T_Imob"

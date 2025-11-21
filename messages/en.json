@@ -214,7 +214,8 @@
     "CTA": {
       "title": "Ready to Transform Your Agency?",
       "description": "Join forward-thinking real estate agencies already using AI to capture more leads and close more deals.",
-      "button": "Learn More"
+      "button": "Learn More",
+      "ctaLinkMessage": "I would like to know more about T_Imob"
     }
   }
 }
