@@ -47,15 +47,15 @@ export function Projects() {
             url: "https://www.raautomoveis.com.br/",
             color: "#cb3438"
         },
-        {
-            title: "TRIORB",
-            category: t("items.triorb.category"),
-            description: t("items.triorb.description"),
-            tags: ["React", "tailwind", "Next.js"],
-            logoUrl: "/projects/triorb.png",
-            url: "https://www.triorb.com.br/",
-            color: "#242dc9"
-        },
+        // {
+        //     title: "TRIORB",
+        //     category: t("items.triorb.category"),
+        //     description: t("items.triorb.description"),
+        //     tags: ["React", "tailwind", "Next.js"],
+        //     logoUrl: "/projects/triorb.png",
+        //     url: "https://www.triorb.com.br/",
+        //     color: "#242dc9"
+        // },
         {
             title: "Zcom Provedor",
             category: t("items.zcom.category"),
