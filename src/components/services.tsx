@@ -5,46 +5,45 @@ import { Card } from "@/src/components/ui/card"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-
-const services = [
-  {
-    icon: Code,
-    title: "Custom Software Development",
-    description:
-      "Tailored solutions built from the ground up to meet your unique business requirements and scale with your growth.",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile Applications",
-    description: "Native and cross-platform mobile apps that deliver exceptional user experiences on iOS and Android.",
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Solutions",
-    description:
-      "Scalable cloud infrastructure and migration services to optimize performance and reduce operational costs.",
-  },
-  {
-    icon: Shield,
-    title: "Cybersecurity",
-    description: "Comprehensive security audits and implementation to protect your digital assets and customer data.",
-  },
-  {
-    icon: Zap,
-    title: "API Development",
-    description: "Robust and well-documented APIs that enable seamless integration and data exchange between systems.",
-  },
-  {
-    icon: Users,
-    title: "Consulting & Strategy",
-    description:
-      "Expert guidance on technology decisions, architecture design, and digital transformation initiatives.",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export function Services() {
+  const t = useTranslations("Services")
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  const services = [
+    {
+      icon: Code,
+      title: t("items.customDev.title"),
+      description: t("items.customDev.description"),
+    },
+    {
+      icon: Smartphone,
+      title: t("items.mobileApps.title"),
+      description: t("items.mobileApps.description"),
+    },
+    {
+      icon: Cloud,
+      title: t("items.cloud.title"),
+      description: t("items.cloud.description"),
+    },
+    {
+      icon: Shield,
+      title: t("items.security.title"),
+      description: t("items.security.description"),
+    },
+    {
+      icon: Zap,
+      title: t("items.api.title"),
+      description: t("items.api.description"),
+    },
+    {
+      icon: Users,
+      title: t("items.consulting.title"),
+      description: t("items.consulting.description"),
+    },
+  ]
 
   return (
     <section id="services" className="py-24 lg:py-32 relative" ref={ref}>
@@ -56,11 +55,10 @@ export function Services() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-primary text-sm font-mono tracking-wider uppercase">What We Do</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-balance">Comprehensive Technology Services</h2>
+          <span className="text-primary text-sm font-mono tracking-wider uppercase">{t("subtitle")}</span>
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-balance">{t("title")}</h2>
           <p className="text-lg text-muted leading-relaxed text-pretty">
-            From concept to deployment, we provide end-to-end software development services that transform your ideas
-            into powerful digital solutions.
+            {t("description")}
           </p>
         </motion.div>
 

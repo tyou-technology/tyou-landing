@@ -4,8 +4,10 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
+import { useTranslations } from "next-intl"
 
 export function Footer() {
+  const t = useTranslations("Footer")
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-50px" })
 
@@ -27,9 +29,9 @@ export function Footer() {
               height={40}
               className="h-8 w-auto"
             />
-            <p className="text-sm text-muted leading-relaxed">Getting you <strong><span className={"text-[#00a5b4]"}>on</span>line</strong></p>
+            <p className="text-sm text-muted leading-relaxed" dangerouslySetInnerHTML={{ __html: t.raw("tagline") }} />
             <p className="text-sm text-muted leading-relaxed">
-              Transforming visions into digital reality through innovative software development.
+              {t("description")}
             </p>
           </motion.div>
 
@@ -39,7 +41,7 @@ export function Footer() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <h3 className="font-semibold mb-4">Services</h3>
+            <h3 className="font-semibold mb-4">{t("headers.services")}</h3>
             <ul className="space-y-3 text-sm text-muted">
               {["Custom Development", "Mobile Apps", "Cloud Solutions", "Consulting"].map((item, index) => (
                 <motion.li
@@ -67,13 +69,13 @@ export function Footer() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h3 className="font-semibold mb-4">Company</h3>
+            <h3 className="font-semibold mb-4">{t("headers.company")}</h3>
             <ul className="space-y-3 text-sm text-muted">
               {[
-                { label: "About Us", href: "#about" },
-                { label: "Projects", href: "#projects" },
-                { label: "Careers", href: "#" },
-                { label: "Contact", href: "#contact" },
+                { label: t("links.about"), href: "#about" },
+                { label: t("links.projects"), href: "#projects" },
+                { label: t("links.careers"), href: "#" },
+                { label: t("links.contact"), href: "#contact" },
               ].map((item, index) => (
                 <motion.li
                   key={item.label}
@@ -100,7 +102,7 @@ export function Footer() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <h3 className="font-semibold mb-4">Contact</h3>
+            <h3 className="font-semibold mb-4">{t("headers.contact")}</h3>
             <ul className="space-y-3 text-sm text-muted">
               {[
                 { label: "tyou.contato@gmail.com", href: "mailto:tyou.contato@gmail.com" },
@@ -135,7 +137,7 @@ export function Footer() {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <p className="text-sm text-muted">© {new Date().getFullYear()} T<span className={"text-primary"}>_</span>YOU. All rights reserved.</p>
+          <p className="text-sm text-muted">© {new Date().getFullYear()} T<span className={"text-primary"}>_</span>YOU. {t("rights")}</p>
           <div className="flex gap-6 text-sm text-muted">
             <motion.a
               href="#"
@@ -143,7 +145,7 @@ export function Footer() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
-              Privacy Policy
+              {t("links.privacy")}
             </motion.a>
             <motion.a
               href="#"
@@ -151,7 +153,7 @@ export function Footer() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
-              Terms of Service
+              {t("links.terms")}
             </motion.a>
           </div>
         </motion.div>

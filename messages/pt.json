@@ -1,0 +1,221 @@
+{
+  "Navigation": {
+    "services": "Serviços",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "timob": "T_Imob",
+    "contact": "Contato",
+    "switchLanguage": "Mudar Idioma",
+    "login": "Login",
+    "getStarted": "Entre em Contato",
+    "getStartedLinkMessage": "Olá, gostaria de saber mais sobre os seus serviços"
+  },
+  "Hero": {
+    "tagline": "Colocando você <highlight>on</highlight>line",
+    "title": "Transformando <highlight>Visões</highlight> em Realidade Digital",
+    "description": "Desenvolvimento de software personalizado para impulsionar seu negócio. Construímos soluções escaláveis e inovadoras que geram resultados reais.",
+    "ctaServices": "Conheça Nossos Serviços",
+    "ctaProjects": "Ver Projetos",
+    "stats": {
+      "projects": "Projetos Entregues",
+      "satisfaction": "Satisfação do Cliente",
+      "support": "Suporte Disponível"
+    }
+  },
+  "About": {
+    "subtitle": "Sobre a T-YOU",
+    "title": "Construindo o Futuro, Uma Linha de Código por Vez",
+    "description1": "A T-YOU é uma empresa de soluções tecnológicas dedicada a transformar negócios através do desenvolvimento de software inovador. Combinamos expertise técnica com pensamento estratégico para entregar soluções que geram valor real ao negócio.",
+    "description2": "Nossa equipe de desenvolvedores experientes, designers e estrategistas trabalha colaborativamente para entender seus desafios únicos e criar soluções personalizadas que superam expectativas.",
+    "values": {
+      "innovation": "Abordagem orientada à inovação",
+      "agile": "Metodologia de desenvolvimento ágil",
+      "transparent": "Comunicação transparente",
+      "quality": "Mentalidade de qualidade em primeiro lugar",
+      "partnerships": "Parcerias de longo prazo",
+      "improvement": "Melhoria contínua"
+    },
+    "stats": {
+      "experience": "Anos de Experiência",
+      "team": "Membros da Equipe",
+      "companies": "Empresas Atendidas",
+      "commitment": "Comprometimento"
+    }
+  },
+  "Services": {
+    "subtitle": "O Que Fazemos",
+    "title": "Serviços Tecnológicos Abrangentes",
+    "description": "Do conceito à implantação, fornecemos serviços de desenvolvimento de software de ponta a ponta que transformam suas ideias em soluções digitais poderosas.",
+    "items": {
+      "customDev": {
+        "title": "Desenvolvimento de Software Personalizado",
+        "description": "Soluções sob medida construídas do zero para atender aos seus requisitos de negócios únicos e escalar com seu crescimento."
+      },
+      "mobileApps": {
+        "title": "Aplicativos Móveis",
+        "description": "Aplicativos móveis nativos e multiplataforma que oferecem experiências de usuário excepcionais em iOS e Android."
+      },
+      "cloud": {
+        "title": "Soluções em Nuvem",
+        "description": "Infraestrutura em nuvem escalável e serviços de migração para otimizar o desempenho e reduzir custos operacionais."
+      },
+      "security": {
+        "title": "Cibersegurança",
+        "description": "Auditorias de segurança abrangentes e implementação para proteger seus ativos digitais e dados de clientes."
+      },
+      "api": {
+        "title": "Desenvolvimento de API",
+        "description": "APIs robustas e bem documentadas que permitem integração perfeita e troca de dados entre sistemas."
+      },
+      "consulting": {
+        "title": "Consultoria e Estratégia",
+        "description": "Orientação especializada em decisões tecnológicas, design de arquitetura e iniciativas de transformação digital."
+      }
+    }
+  },
+  "Projects": {
+    "subtitle": "Nosso Trabalho",
+    "title": "Projetos em Destaque",
+    "viewSite": "Ver Site Ao Vivo",
+    "items": {
+      "brasoul": {
+        "category": "Aplicação Web",
+        "description": "Uma plataforma web institucional para uma marca de cosméticos naturais inspirada na biodiversidade amazônica. O site apresenta vitrines dinâmicas de produtos para suas linhas de cuidados capilares (Radiant, Sublime) e integra gerenciamento de estoque em tempo real. Destaca o compromisso da marca com a sustentabilidade e inclui um painel de análise para rastrear o engajamento do cliente."
+      },
+      "ra": {
+        "category": "Aplicação Web",
+        "description": "Uma plataforma web abrangente para uma concessionária de automóveis estabelecida com 29 anos de experiência no mercado. A aplicação exibe um inventário curado de veículos novos e usados de alta qualidade, integrado a um sistema de gerenciamento de estoque em tempo real. Os principais recursos incluem opções detalhadas de financiamento e uma seção de depoimentos de clientes para construir confiança e enfatizar a qualidade do serviço."
+      },
+      "triorb": {
+        "category": "Aplicação Web",
+        "description": "Uma plataforma web escalável especializada em visualização tecnológica de alto realismo para projetos de construção e imobiliários. A aplicação oferece experiências imersivas em AR/VR, incluindo tours virtuais interativos em 360° e plantas humanizadas em 3D. Serve como um portfólio dinâmico para projetos como Residencial Renascence e Terras de Santo Antônio, com um backend para coletar insights sobre o engajamento do usuário."
+      },
+      "zcom": {
+        "category": "Aplicação Web",
+        "description": "Uma plataforma escalável para um provedor de internet brasileiro especializado em serviços de internet e TV 100% fibra óptica. A aplicação possui um portal do cliente robusto para gerenciar assinaturas e acessar suporte. Também integra ferramentas para monitoramento de rede em tempo real e fornece um painel de análise para rastrear o desempenho e a confiabilidade do serviço."
+      }
+    }
+  },
+  "Contact": {
+    "subtitle": "Entre em Contato",
+    "title": "Vamos Construir Algo Incrível Juntos",
+    "description": "Pronto para transformar sua visão em realidade? Entre em contato hoje para discutir seu projeto e descobrir como podemos ajudar seu negócio a prosperar.",
+    "email": "Email",
+    "social": "Redes Sociais",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "company": "Empresa",
+      "message": "Mensagem",
+      "submit": "Enviar via WhatsApp",
+      "placeholders": {
+        "name": "Seu nome",
+        "email": "seu@email.com",
+        "company": "Nome da sua empresa",
+        "message": "Conte-nos sobre seu projeto..."
+      }
+    }
+  },
+  "Footer": {
+    "tagline": "Colocando você <highlight>on</highlight>line",
+    "description": "Transformando visões em realidade digital através do desenvolvimento de software inovador.",
+    "headers": {
+      "services": "Serviços",
+      "company": "Empresa",
+      "contact": "Contato"
+    },
+    "links": {
+      "about": "Sobre Nós",
+      "projects": "Projetos",
+      "careers": "Carreiras",
+      "contact": "Contato",
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Serviço"
+    },
+    "rights": "Todos os direitos reservados."
+  },
+  "TImob": {
+    "Hero": {
+      "badge": "Assistente Imobiliário com IA",
+      "title": "Nunca Perca <br /> <highlight>Outro Lead</highlight>",
+      "description": "Sua recepcionista de IA trabalha 24/7 para capturar leads, qualificar prospectos e agendar visitas a imóveis automaticamente.",
+      "ctaStart": "Saiba mais",
+      "ctaStartLinkMessage": "Eu gostaria de saber mais sobre o T_Imob",
+      "ctaDemo": "Ver Demo",
+      "stats": {
+        "availability": "Disponibilidade",
+        "leads": "Mais Leads",
+        "saved": "Tempo Economizado"
+      },
+      "features": {
+        "answers": "Atende Todas as Chamadas",
+        "natural": "Conversas Naturais",
+        "schedule": "Agendamento Automático",
+        "sync": "Sincronização Instantânea com CRM"
+      }
+    },
+    "Problem": {
+      "title": "O Problema",
+      "description": "Imobiliárias perdem inúmeras oportunidades devido à disponibilidade limitada e processos manuais.",
+      "items": {
+        "missedCalls": "Chamadas perdidas fora do horário comercial",
+        "capture": "Captura de leads 24/7 impossível",
+        "waste": "Agentes perdem tempo com tarefas repetitivas",
+        "slow": "Tempos de resposta lentos perdem oportunidades"
+      }
+    },
+    "Solution": {
+      "badge": "A Solução",
+      "title": "Assistente de Voz com IA",
+      "description1": "T_Imob é uma solução SaaS que atua como uma \"super recepcionista\" virtual para imobiliárias, operando 24/7 através de tecnologia avançada de IA de Voz.",
+      "description2": "Nosso sistema se integra perfeitamente com seu CRM e calendário existentes para automatizar a captura de leads, qualificação e agendamento de visitas—tudo isso enquanto proporciona uma experiência de conversa humana.",
+      "features": [
+        "Orquestrador de IA",
+        "Reconhecimento de Voz (STT)",
+        "Compreensão de Linguagem Natural",
+        "Integração com CRM",
+        "Sincronização de Calendário",
+        "Texto para Fala (TTS)"
+      ]
+    },
+    "Features": {
+      "title": "Recursos Poderosos",
+      "description": "Tudo o que você precisa para transformar as operações da sua imobiliária.",
+      "items": {
+        "capture": { "title": "Captura de Leads 24/7", "description": "Nunca perca uma chamada. Nossa IA atende todas as consultas, dia ou noite." },
+        "conversations": { "title": "Conversas Naturais", "description": "Interações humanas que constroem confiança com potenciais clientes." },
+        "scheduling": { "title": "Agendamento Automático", "description": "Agende visitas a imóveis diretamente no seu sistema de calendário." },
+        "qualification": { "title": "Qualificação de Leads", "description": "Filtragem inteligente para priorizar oportunidades de alto valor." },
+        "crm": { "title": "Integração com CRM", "description": "Sincronize perfeitamente com suas ferramentas imobiliárias existentes." },
+        "time": { "title": "Economia de Tempo", "description": "Libere os agentes para focar no fechamento de negócios, não em tarefas administrativas." }
+      }
+    },
+    "KPIs": {
+      "title": "Resultados Que Importam",
+      "description": "Impacto mensurável no desempenho do seu negócio imobiliário.",
+      "items": {
+        "availability": "Disponibilidade",
+        "coverage": "Cobertura de Chamadas",
+        "saved": "Tempo Economizado",
+        "leads": "Mais Leads"
+      }
+    },
+    "HowItWorks": {
+      "title": "Como Funciona",
+      "description": "Automação perfeita desde a primeira chamada até a visita agendada.",
+      "steps": {
+        "1": { "title": "Lead Liga", "description": "Cliente potencial liga para o número da sua agência" },
+        "2": { "title": "IA Atende", "description": "T_Imob atende e engaja em conversa natural" },
+        "3": { "title": "Qualificação", "description": "IA avalia necessidades e requisitos do imóvel" },
+        "4": { "title": "Agendar Visita", "description": "Reserva horário diretamente no seu calendário" },
+        "5": { "title": "Atualização do CRM", "description": "Todos os dados sincronizados automaticamente com seus sistemas" }
+      }
+    },
+    "CTA": {
+      "title": "Pronto para Transformar Sua Agência?",
+      "description": "Junte-se a imobiliárias inovadoras que já usam IA para capturar mais leads e fechar mais negócios.",
+      "button": "Saiba Mais",
+      "ctaLinkMessage": "Eu gostaria de saber mais sobre o T_Imob"
+    }
+  }
+}

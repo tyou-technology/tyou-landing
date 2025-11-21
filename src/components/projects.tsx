@@ -4,45 +4,7 @@ import {Card} from "@/src/components/ui/card"
 import {ArrowUpRight} from "lucide-react"
 import {motion, useInView} from "framer-motion"
 import {useRef} from "react"
-
-const projects = [
-    {
-        title: "Brasoul Beauty Care",
-        category: "Web Application",
-        description: "An institutional web platform for a natural cosmetics brand inspired by Amazonian biodiversity. The site features dynamic product showcases for its hair care lines (Radiant, Sublime) and integrates real-time inventory management. It highlights the brand's commitment to sustainability and includes an analytics dashboard to track customer engagement.",
-        tags: ["React", "chakra-ui", "Next.js"],
-        logoUrl: "/projects/brasoul.png",
-        url: "https://www.brasoulbeautycare.com/",
-        color: "#b38e46"
-    },
-    {
-        title: "RA Automóveis",
-        category: "Web Application",
-        description: "A comprehensive web platform for an established automotive dealer with 29 years of market experience. The application showcases a curated inventory of new and high-quality used vehicles, integrated with a real-time stock management system. Key features include detailed financing options and a customer testimonial section to build trust and emphasize quality service.",
-        tags: ["React", "chakra-ui", "Next.js"],
-        logoUrl: "/projects/raautomoveis.png",
-        url: "https://www.raautomoveis.com.br/",
-        color: "#cb3438"
-    },
-    {
-        title: "TRIORB",
-        category: "Web Application",
-        description: "A scalable web platform specializing in high-realism technological visualization for construction and real estate projects. The application delivers immersive AR/VR experiences, including interactive 360° virtual tours and 3D humanized floor plans. It serves as a dynamic portfolio for projects like Residencial Renascence and Terras de Santo Antônio, with a backend to gather insights on user engagement.",
-        tags: ["React", "tailwind", "Next.js"],
-        logoUrl: "/projects/triorb.png",
-        url: "https://www.triorb.com.br/",
-        color: "#242dc9"
-    },
-    {
-        title: "Zcom Provedor",
-        category: "Web Application",
-        description: "A scalable platform for a Brazilian ISP specializing in 100% fiber optic internet and TV services. The application features a robust customer portal for managing subscriptions and accessing support. It also integrates tools for real-time network monitoring and provides an analytics dashboard to track service performance and reliability.",
-        tags: ["React", "tailwind", "Next.js"],
-        logoUrl: "/projects/zcom.png",
-        url: "https://www.zcomprovedor.com.br/desenvolvimento",
-        color: "#0E46B9"
-    }
-]
+import { useTranslations } from "next-intl"
 
 const hexToRgb = (hex: string): string => {
     const cleanHex = hex.replace('#', '');
@@ -62,8 +24,48 @@ const hexToRgb = (hex: string): string => {
 };
 
 export function Projects() {
+    const t = useTranslations("Projects")
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true, margin: "-100px"})
+
+    const projects = [
+        {
+            title: "Brasoul Beauty Care",
+            category: t("items.brasoul.category"),
+            description: t("items.brasoul.description"),
+            tags: ["React", "chakra-ui", "Next.js"],
+            logoUrl: "/projects/brasoul.png",
+            url: "https://www.brasoulbeautycare.com/",
+            color: "#b38e46"
+        },
+        {
+            title: "RA Automóveis",
+            category: t("items.ra.category"),
+            description: t("items.ra.description"),
+            tags: ["React", "chakra-ui", "Next.js"],
+            logoUrl: "/projects/raautomoveis.png",
+            url: "https://www.raautomoveis.com.br/",
+            color: "#cb3438"
+        },
+        {
+            title: "TRIORB",
+            category: t("items.triorb.category"),
+            description: t("items.triorb.description"),
+            tags: ["React", "tailwind", "Next.js"],
+            logoUrl: "/projects/triorb.png",
+            url: "https://www.triorb.com.br/",
+            color: "#242dc9"
+        },
+        {
+            title: "Zcom Provedor",
+            category: t("items.zcom.category"),
+            description: t("items.zcom.description"),
+            tags: ["React", "tailwind", "Next.js"],
+            logoUrl: "/projects/zcom.png",
+            url: "https://www.zcomprovedor.com.br/desenvolvimento",
+            color: "#0E46B9"
+        }
+    ]
 
     return (
         <section id="projects" className="py-24 lg:py-32 relative" ref={ref}>
@@ -76,8 +78,8 @@ export function Projects() {
                     transition={{duration: 0.6}}
                 >
                     <div className="max-w-2xl">
-                        <span className="text-primary text-sm font-mono tracking-wider uppercase">Our Work</span>
-                        <h2 className="text-4xl md:text-5xl font-bold mt-4 text-balance">Featured Projects</h2>
+                        <span className="text-primary text-sm font-mono tracking-wider uppercase">{t("subtitle")}</span>
+                        <h2 className="text-4xl md:text-5xl font-bold mt-4 text-balance">{t("title")}</h2>
                     </div>
                     {/*<motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>*/}
                     {/*    <Button*/}
@@ -159,7 +161,7 @@ export function Projects() {
                                             className="mt-6 flex items-center text-sm text-[var(--color)] group-hover:text-[var(--color)] group-hover:gap-2 transition-all w-fit"
                                             onClick={(e) => e.stopPropagation()}
                                         >
-                                            View Live Site
+                                            {t("viewSite")}
                                             <ArrowUpRight
                                                 className="ml-1 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
                                             />

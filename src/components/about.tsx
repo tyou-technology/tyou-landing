@@ -4,19 +4,21 @@ import { CheckCircle2 } from "lucide-react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-
-const values = [
-  "Innovation-driven approach",
-  "Agile development methodology",
-  "Transparent communication",
-  "Quality-first mindset",
-  "Long-term partnerships",
-  "Continuous improvement",
-]
+import { useTranslations } from "next-intl"
 
 export function About() {
+  const t = useTranslations("About")
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
+
+  const values = [
+    t("values.innovation"),
+    t("values.agile"),
+    t("values.transparent"),
+    t("values.quality"),
+    t("values.partnerships"),
+    t("values.improvement"),
+  ]
 
   return (
     <section id="about" className="py-24 lg:py-32 bg-secondary/5 relative overflow-hidden" ref={ref}>
@@ -33,21 +35,18 @@ export function About() {
             transition={{ duration: 0.6 }}
           >
             <div>
-              <span className="text-primary text-sm font-mono tracking-wider uppercase">About T-YOU</span>
+              <span className="text-primary text-sm font-mono tracking-wider uppercase">{t("subtitle")}</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-balance">
-                Building the Future, One Line of Code at a Time
+                {t("title")}
               </h2>
             </div>
 
             <div className="space-y-4 text-lg text-muted leading-relaxed">
               <p className="text-pretty">
-                T-YOU is a technology solutions company dedicated to transforming businesses through innovative software
-                development. We combine technical expertise with strategic thinking to deliver solutions that drive real
-                business value.
+                {t("description1")}
               </p>
               <p className="text-pretty">
-                Our team of experienced developers, designers, and strategists work collaboratively to understand your
-                unique challenges and create custom solutions that exceed expectations.
+                {t("description2")}
               </p>
             </div>
 
@@ -71,10 +70,10 @@ export function About() {
           <div className="relative">
             <div className="grid grid-cols-2 gap-6">
               {[
-                { value: "4+", label: "Years Experience", offset: "" },
-                { value: "3+", label: "Team Members", offset: "mt-12" },
-                { value: "4+", label: "Companies Served", offset: "-mt-6" },
-                { value: "100%", label: "Commitment", offset: "mt-6" },
+                { value: "4+", label: t("stats.experience"), offset: "" },
+                { value: "3+", label: t("stats.team"), offset: "mt-12" },
+                { value: "4+", label: t("stats.companies"), offset: "-mt-6" },
+                { value: "100%", label: t("stats.commitment"), offset: "mt-6" },
               ].map((stat, index) => (
                 <motion.div
                   key={index}

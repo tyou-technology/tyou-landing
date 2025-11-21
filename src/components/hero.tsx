@@ -4,8 +4,11 @@ import { Button } from "@/src/components/ui/button"
 import { ArrowRight, Code2, Database, Layers } from "lucide-react"
 import { GeometricBackground } from "@/src/components/geometric-background"
 import { motion } from "framer-motion"
+import { useTranslations } from "next-intl"
 
 export function Hero() {
+  const t = useTranslations("Hero")
+
   return (
     <section id={"hero"} className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <GeometricBackground />
@@ -25,7 +28,7 @@ export function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <span className="text-sm font-mono tracking-wider uppercase">Getting you <strong><span className={"text-[#00a5b4]"}>on</span>line</strong></span>
+              <span className="text-sm font-mono tracking-wider uppercase" dangerouslySetInnerHTML={{ __html: t.raw("tagline") }} />
             </motion.div>
 
             <motion.h1
@@ -33,9 +36,8 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              Transforming <span className="text-primary">Visions</span> into Digital Reality
-            </motion.h1>
+              dangerouslySetInnerHTML={{ __html: t.raw("title") }}
+            />
 
             <motion.p
               className="text-lg md:text-xl text-muted leading-relaxed max-w-xl text-pretty"
@@ -43,8 +45,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Custom software development to propel your business forward. We build scalable, innovative solutions that
-              drive real results.
+              {t("description")}
             </motion.p>
 
             <motion.div
@@ -58,7 +59,7 @@ export function Hero() {
                   size="lg"
                   className="bg-primary text-primary-foreground hover:bg-[#00a5b4] group cursor-pointer transition-colors"
                 >
-                  Discover Our Services
+                  {t("ctaServices")}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </motion.a>
@@ -68,7 +69,7 @@ export function Hero() {
                   variant="outline"
                   className="border-muted text-foreground hover:bg-muted/10 hover:text-[#00a5b4] hover:border-[#00a5b4] bg-transparent cursor-pointer transition-all"
                 >
-                  View Projects
+                  {t("ctaProjects")}
                 </Button>
               </motion.a>
             </motion.div>
@@ -81,9 +82,9 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               {[
-                { value: "4+", label: "Projects Delivered" },
-                { value: "98%", label: "Client Satisfaction" },
-                { value: "24/7", label: "Support Available" },
+                { value: "4+", label: t("stats.projects") },
+                { value: "98%", label: t("stats.satisfaction") },
+                { value: "24/7", label: t("stats.support") },
               ].map((stat, index) => (
                 <motion.div
                   key={index}

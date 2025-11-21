@@ -1,0 +1,220 @@
+{
+  "Navigation": {
+    "services": "Services",
+    "about": "About",
+    "projects": "Projects",
+    "timob": "T_Imob",
+    "contact": "Contact",
+    "switchLanguage": "Switch Language",
+    "login": "Login",
+    "getStarted": "Contact Us",
+    "getStartedLinkMessage": "Hello, I would like to know more about your services"
+  },
+  "Hero": {
+    "tagline": "Getting you <highlight>on</highlight>line",
+    "title": "Transforming <highlight>Visions</highlight> into Digital Reality",
+    "description": "Custom software development to propel your business forward. We build scalable, innovative solutions that drive real results.",
+    "ctaServices": "Discover Our Services",
+    "ctaProjects": "View Projects",
+    "stats": {
+      "projects": "Projects Delivered",
+      "satisfaction": "Client Satisfaction",
+      "support": "Support Available"
+    }
+  },
+  "About": {
+    "subtitle": "About T-YOU",
+    "title": "Building the Future, One Line of Code at a Time",
+    "description1": "T-YOU is a technology solutions company dedicated to transforming businesses through innovative software development. We combine technical expertise with strategic thinking to deliver solutions that drive real business value.",
+    "description2": "Our team of experienced developers, designers, and strategists work collaboratively to understand your unique challenges and create custom solutions that exceed expectations.",
+    "values": {
+      "innovation": "Innovation-driven approach",
+      "agile": "Agile development methodology",
+      "transparent": "Transparent communication",
+      "quality": "Quality-first mindset",
+      "partnerships": "Long-term partnerships",
+      "improvement": "Continuous improvement"
+    },
+    "stats": {
+      "experience": "Years Experience",
+      "team": "Team Members",
+      "companies": "Companies Served",
+      "commitment": "Commitment"
+    }
+  },
+  "Services": {
+    "subtitle": "What We Do",
+    "title": "Comprehensive Technology Services",
+    "description": "From concept to deployment, we provide end-to-end software development services that transform your ideas into powerful digital solutions.",
+    "items": {
+      "customDev": {
+        "title": "Custom Software Development",
+        "description": "Tailored solutions built from the ground up to meet your unique business requirements and scale with your growth."
+      },
+      "mobileApps": {
+        "title": "Mobile Applications",
+        "description": "Native and cross-platform mobile apps that deliver exceptional user experiences on iOS and Android."
+      },
+      "cloud": {
+        "title": "Cloud Solutions",
+        "description": "Scalable cloud infrastructure and migration services to optimize performance and reduce operational costs."
+      },
+      "security": {
+        "title": "Cybersecurity",
+        "description": "Comprehensive security audits and implementation to protect your digital assets and customer data."
+      },
+      "api": {
+        "title": "API Development",
+        "description": "Robust and well-documented APIs that enable seamless integration and data exchange between systems."
+      },
+      "consulting": {
+        "title": "Consulting & Strategy",
+        "description": "Expert guidance on technology decisions, architecture design, and digital transformation initiatives."
+      }
+    }
+  },
+  "Projects": {
+    "subtitle": "Our Work",
+    "title": "Featured Projects",
+    "viewSite": "View Live Site",
+    "items": {
+      "brasoul": {
+        "category": "Web Application",
+        "description": "An institutional web platform for a natural cosmetics brand inspired by Amazonian biodiversity. The site features dynamic product showcases for its hair care lines (Radiant, Sublime) and integrates real-time inventory management. It highlights the brand's commitment to sustainability and includes an analytics dashboard to track customer engagement."
+      },
+      "ra": {
+        "category": "Web Application",
+        "description": "A comprehensive web platform for an established automotive dealer with 29 years of market experience. The application showcases a curated inventory of new and high-quality used vehicles, integrated with a real-time stock management system. Key features include detailed financing options and a customer testimonial section to build trust and emphasize quality service."
+      },
+      "triorb": {
+        "category": "Web Application",
+        "description": "A scalable web platform specializing in high-realism technological visualization for construction and real estate projects. The application delivers immersive AR/VR experiences, including interactive 360° virtual tours and 3D humanized floor plans. It serves as a dynamic portfolio for projects like Residencial Renascence and Terras de Santo Antônio, with a backend to gather insights on user engagement."
+      },
+      "zcom": {
+        "category": "Web Application",
+        "description": "A scalable platform for a Brazilian ISP specializing in 100% fiber optic internet and TV services. The application features a robust customer portal for managing subscriptions and accessing support. It also integrates tools for real-time network monitoring and provides an analytics dashboard to track service performance and reliability."
+      }
+    }
+  },
+  "Contact": {
+    "subtitle": "Get In Touch",
+    "title": "Let's Build Something Amazing Together",
+    "description": "Ready to transform your vision into reality? Contact us today to discuss your project and discover how we can help your business thrive.",
+    "email": "Email",
+    "social": "Social Media",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "submit": "Send via WhatsApp",
+      "placeholders": {
+        "name": "Your name",
+        "email": "your@email.com",
+        "company": "Your company name",
+        "message": "Tell us about your project..."
+      }
+    }
+  },
+  "Footer": {
+    "tagline": "Getting you <highlight>on</highlight>line",
+    "description": "Transforming visions into digital reality through innovative software development.",
+    "headers": {
+      "services": "Services",
+      "company": "Company",
+      "contact": "Contact"
+    },
+    "links": {
+      "about": "About Us",
+      "projects": "Projects",
+      "careers": "Careers",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "rights": "All rights reserved."
+  },
+  "TImob": {
+    "Hero": {
+      "badge": "AI-Powered Real Estate Assistant",
+      "title": "Never Miss <br /> <highlight>Another Lead</highlight>",
+      "description": "Your AI receptionist works 24/7 to capture leads, qualify prospects, and schedule property visits automatically.",
+      "ctaStart": "Learn More",
+      "ctaStartLinkMessage": "I would like to know more about T_Imob",
+      "ctaDemo": "Watch Demo",
+      "stats": {
+        "availability": "Availability",
+        "leads": "More Leads",
+        "saved": "Time Saved"
+      },
+      "features": {
+        "answers": "Answers Every Call",
+        "natural": "Natural Conversations",
+        "schedule": "Auto-Schedule Visits",
+        "sync": "Instant CRM Sync"
+      }
+    },
+    "Problem": {
+      "title": "The Problem",
+      "description": "Real estate agencies lose countless opportunities due to limited availability and manual processes.",
+      "items": {
+        "missedCalls": "Missed calls outside business hours",
+        "capture": "24/7 lead capture impossible",
+        "waste": "Agents waste time on repetitive tasks",
+        "slow": "Slow response times lose opportunities"
+      }
+    },
+    "Solution": {
+      "badge": "The Solution",
+      "title": "AI-Powered Voice Assistant",
+      "description1": "T_Imob is a SaaS solution that acts as a virtual \"super receptionist\" for real estate agencies, operating 24/7 through advanced Voice AI technology.",
+      "description2": "Our system seamlessly integrates with your existing CRM and calendar systems to automate lead capture, qualification, and visit scheduling—all while providing a human-like conversation experience.",
+      "features": [
+        "AI Orchestrator",
+        "Voice Recognition (STT)",
+        "Natural Language Understanding",
+        "CRM Integration",
+        "Calendar Sync",
+        "Text-to-Speech (TTS)"
+      ]
+    },
+    "Features": {
+      "title": "Powerful Features",
+      "description": "Everything you need to transform your real estate agency operations.",
+      "items": {
+        "capture": { "title": "24/7 Lead Capture", "description": "Never miss a call. Our AI answers every inquiry, day or night." },
+        "conversations": { "title": "Natural Conversations", "description": "Human-like interactions that build trust with potential clients." },
+        "scheduling": { "title": "Automatic Scheduling", "description": "Schedule property visits directly in your calendar system." },
+        "qualification": { "title": "Lead Qualification", "description": "Intelligent filtering to prioritize high-value opportunities." },
+        "crm": { "title": "CRM Integration", "description": "Seamlessly sync with your existing real estate tools." },
+        "time": { "title": "Time Savings", "description": "Free up agents to focus on closing deals, not admin tasks." }
+      }
+    },
+    "KPIs": {
+      "title": "Results That Matter",
+      "description": "Measurable impact on your real estate business performance.",
+      "items": {
+        "availability": "Availability",
+        "coverage": "Call Coverage",
+        "saved": "Time Saved",
+        "leads": "More Leads"
+      }
+    },
+    "HowItWorks": {
+      "title": "How It Works",
+      "description": "Seamless automation from first call to scheduled visit.",
+      "steps": {
+        "1": { "title": "Lead Calls In", "description": "Potential client calls your agency number" },
+        "2": { "title": "AI Answers", "description": "T_Imob picks up and engages in natural conversation" },
+        "3": { "title": "Qualification", "description": "AI assesses needs and property requirements" },
+        "4": { "title": "Schedule Visit", "description": "Books appointment directly in your calendar" },
+        "5": { "title": "CRM Update", "description": "All data automatically synced to your systems" }
+      }
+    },
+    "CTA": {
+      "title": "Ready to Transform Your Agency?",
+      "description": "Join forward-thinking real estate agencies already using AI to capture more leads and close more deals.",
+      "button": "Learn More"
+    }
+  }
+}

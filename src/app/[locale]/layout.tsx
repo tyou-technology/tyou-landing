@@ -1,19 +1,19 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import '../globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  // Título principal do site
   title: {
     default: 'T_YOU | Getting You Online',
     template: '%s | T_YOU',
   },
   description: 'We build modern, fast, and beautiful websites that help your business grow online. From landing pages to e-commerce — we get you online, beautifully.',
-
   openGraph: {
     title: 'T_YOU – Getting You Online',
     description: 'Modern web solutions for businesses. Fast. Beautiful. Effective.',
@@ -77,16 +77,23 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`font-sans antialiased`}>
-        {children}
-        <Analytics />
+        <NextIntlClientProvider messages={messages}>
+          {children}
+          <Analytics />
+        </NextIntlClientProvider>
       </body>
     </html>
   )

@@ -5,8 +5,11 @@ import { Card } from "@/src/components/ui/card"
 import { InstagramIcon, Mail, Phone } from "lucide-react"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
+import { useTranslations } from "next-intl"
+import { PHONE_NUMBER } from "../utils/constants"
 
 export function Contact() {
+    const t = useTranslations("Contact")
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true, margin: "-100px" })
 
@@ -16,8 +19,6 @@ export function Contact() {
     const companyRef = useRef<HTMLInputElement>(null)
     const messageRef = useRef<HTMLTextAreaElement>(null)
 
-    // Número do WhatsApp (sem espaços, parênteses, etc.)
-    const phoneNumber = "5518997970919" // +55 (18) 99797-0919 → apenas números
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
@@ -37,7 +38,7 @@ export function Contact() {
         const encodedMessage = encodeURIComponent(text)
 
         // Abre WhatsApp
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+        const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodedMessage}`
         window.open(whatsappUrl, "_blank")
     }
 
@@ -53,13 +54,12 @@ export function Contact() {
                         transition={{ duration: 0.6 }}
                     >
                         <div>
-                            <span className="text-primary text-sm font-mono tracking-wider uppercase">Get In Touch</span>
+                            <span className="text-primary text-sm font-mono tracking-wider uppercase">{t("subtitle")}</span>
                             <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-balance">
-                                Let's Build Something Amazing Together
+                                {t("title")}
                             </h2>
                             <p className="text-lg text-muted leading-relaxed text-pretty">
-                                Ready to transform your vision into reality? Contact us today to discuss your project
-                                and discover how we can help your business thrive.
+                                {t("description")}
                             </p>
                         </div>
 
@@ -67,14 +67,14 @@ export function Contact() {
                             {[
                                 {
                                     icon: Mail,
-                                    title: "Email",
+                                    title: t("email"),
                                     value: "tyou.contato@gmail.com",
                                     href: "mailto:tyou.contato@gmail.com"
                                 },
                                 // { icon: Phone, title: "Phone", value: "+55 (18) 99797-0919", href: "tel:+5518997970919" },
                                 {
                                     icon: InstagramIcon,
-                                    title: "Social Media",
+                                    title: t("social"),
                                     value: "@tyoutecnologia",
                                     href: "https://instagram.com/tyoutecnologia",
                                 },
@@ -117,9 +117,9 @@ export function Contact() {
                         <Card className="p-8 bg-card border-border">
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 {[
-                                    { id: "name", label: "Name", type: "text", placeholder: "Your name", ref: nameRef },
-                                    { id: "email", label: "Email", type: "email", placeholder: "your@email.com", ref: emailRef },
-                                    { id: "company", label: "Company", type: "text", placeholder: "Your company name", ref: companyRef },
+                                    { id: "name", label: t("form.name"), type: "text", placeholder: t("form.placeholders.name"), ref: nameRef },
+                                    { id: "email", label: t("form.email"), type: "email", placeholder: t("form.placeholders.email"), ref: emailRef },
+                                    { id: "company", label: t("form.company"), type: "text", placeholder: t("form.placeholders.company"), ref: companyRef },
                                 ].map((field, index) => (
                                     <motion.div
                                         key={field.id}
@@ -149,14 +149,14 @@ export function Contact() {
                                     transition={{ duration: 0.4, delay: 0.7 }}
                                 >
                                     <label htmlFor="message" className="text-sm font-medium">
-                                        Message
+                                        {t("form.message")}
                                     </label>
                                     <textarea
                                         id="message"
                                         ref={messageRef}
                                         rows={5}
                                         className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
-                                        placeholder="Tell us about your project..."
+                                        placeholder={t("form.placeholders.message")}
                                         required
                                     />
                                 </motion.div>
@@ -172,7 +172,7 @@ export function Contact() {
                                             className="w-full bg-primary text-primary-foreground hover:bg-[#00a5b4] cursor-pointer transition-colors"
                                             size="lg"
                                         >
-                                            Send via WhatsApp
+                                            {t("form.submit")}
                                         </Button>
                                     </motion.div>
                                 </motion.div>
