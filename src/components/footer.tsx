@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import { useTranslations } from "next-intl"
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
-  const t = useTranslations("Footer")
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-50px" })
+  const t = useTranslations("Footer");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
     <footer className="border-t border-border bg-background" ref={ref}>
@@ -23,13 +23,16 @@ export function Footer() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO2-NuuKOoPyy1zX3wAtMANWzwrz4YyImz.png"
+              src="/logo2.png"
               alt="T-YOU"
               width={120}
               height={40}
               className="h-8 w-auto"
             />
-            <p className="text-sm text-muted leading-relaxed" dangerouslySetInnerHTML={{ __html: t.raw("tagline") }} />
+            <p
+              className="text-sm text-muted leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: t.raw("tagline") }}
+            />
             <p className="text-sm text-muted leading-relaxed">
               {t("description")}
             </p>
@@ -43,11 +46,18 @@ export function Footer() {
           >
             <h3 className="font-semibold mb-4">{t("headers.services")}</h3>
             <ul className="space-y-3 text-sm text-muted">
-              {["Custom Development", "Mobile Apps", "Cloud Solutions", "Consulting"].map((item, index) => (
+              {[
+                "Custom Development",
+                "Mobile Apps",
+                "Cloud Solutions",
+                "Consulting",
+              ].map((item, index) => (
                 <motion.li
                   key={item}
                   initial={{ opacity: 0, x: -10 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
+                  animate={
+                    isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }
+                  }
                   transition={{ duration: 0.3, delay: 0.2 + index * 0.05 }}
                 >
                   <motion.a
@@ -80,7 +90,9 @@ export function Footer() {
                 <motion.li
                   key={item.label}
                   initial={{ opacity: 0, x: -10 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
+                  animate={
+                    isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }
+                  }
                   transition={{ duration: 0.3, delay: 0.3 + index * 0.05 }}
                 >
                   <motion.a
@@ -105,15 +117,23 @@ export function Footer() {
             <h3 className="font-semibold mb-4">{t("headers.contact")}</h3>
             <ul className="space-y-3 text-sm text-muted">
               {[
-                { label: "tyou.contato@gmail.com", href: "mailto:tyou.contato@gmail.com" },
+                {
+                  label: "tyou.contato@gmail.com",
+                  href: "mailto:tyou.contato@gmail.com",
+                },
                 // { label: "+55 (18) 99797-0919", href: "tel:+5518997970919" },
                 { label: "tyou.com.br", href: "https://tyou.com.br" },
-                { label: "@tyoutecnologia", href: "https://instagram.com/tyoutecnologia" },
+                {
+                  label: "@tyoutecnologia",
+                  href: "https://instagram.com/tyoutecnologia",
+                },
               ].map((item, index) => (
                 <motion.li
                   key={item.label}
                   initial={{ opacity: 0, x: -10 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
+                  animate={
+                    isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }
+                  }
                   transition={{ duration: 0.3, delay: 0.4 + index * 0.05 }}
                 >
                   <motion.a
@@ -137,7 +157,10 @@ export function Footer() {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <p className="text-sm text-muted">© {new Date().getFullYear()} T<span className={"text-primary"}>_</span>YOU. {t("rights")}</p>
+          <p className="text-sm text-muted">
+            © {new Date().getFullYear()} T
+            <span className={"text-primary"}>_</span>YOU. {t("rights")}
+          </p>
           <div className="flex gap-6 text-sm text-muted">
             <motion.a
               href="#"
@@ -159,5 +182,5 @@ export function Footer() {
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }

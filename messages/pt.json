@@ -93,6 +93,10 @@
       "zcom": {
         "category": "Aplicação Web",
         "description": "Uma plataforma escalável para um provedor de internet brasileiro especializado em serviços de internet e TV 100% fibra óptica. A aplicação possui um portal do cliente robusto para gerenciar assinaturas e acessar suporte. Também integra ferramentas para monitoramento de rede em tempo real e fornece um painel de análise para rastrear o desempenho e a confiabilidade do serviço."
+      },
+      "oliveto": {
+        "category": "Aplicação Web",
+        "description": "Uma plataforma web institucional para um escritório especializado em Perícia Contábil, Auditoria e Consultoria Empresarial. A aplicação organiza serviços de alta complexidade técnica, como Valuation e Cálculos Judiciais, facilitando a navegação para advogados e clientes corporativos. O projeto destaca a autoridade dos sócios através de uma central de conteúdos dinâmicos e foi desenvolvido com foco em performance e SEO para consolidar a presença digital da marca na região de Londrina."
       }
     }
   },
@@ -182,12 +186,30 @@
       "title": "Recursos Poderosos",
       "description": "Tudo o que você precisa para transformar as operações da sua imobiliária.",
       "items": {
-        "capture": { "title": "Captura de Leads 24/7", "description": "Nunca perca uma chamada. Nossa IA atende todas as consultas, dia ou noite." },
-        "conversations": { "title": "Conversas Naturais", "description": "Interações humanas que constroem confiança com potenciais clientes." },
-        "scheduling": { "title": "Agendamento Automático", "description": "Agende visitas a imóveis diretamente no seu sistema de calendário." },
-        "qualification": { "title": "Qualificação de Leads", "description": "Filtragem inteligente para priorizar oportunidades de alto valor." },
-        "crm": { "title": "Integração com CRM", "description": "Sincronize perfeitamente com suas ferramentas imobiliárias existentes." },
-        "time": { "title": "Economia de Tempo", "description": "Libere os agentes para focar no fechamento de negócios, não em tarefas administrativas." }
+        "capture": {
+          "title": "Captura de Leads 24/7",
+          "description": "Nunca perca uma chamada. Nossa IA atende todas as consultas, dia ou noite."
+        },
+        "conversations": {
+          "title": "Conversas Naturais",
+          "description": "Interações humanas que constroem confiança com potenciais clientes."
+        },
+        "scheduling": {
+          "title": "Agendamento Automático",
+          "description": "Agende visitas a imóveis diretamente no seu sistema de calendário."
+        },
+        "qualification": {
+          "title": "Qualificação de Leads",
+          "description": "Filtragem inteligente para priorizar oportunidades de alto valor."
+        },
+        "crm": {
+          "title": "Integração com CRM",
+          "description": "Sincronize perfeitamente com suas ferramentas imobiliárias existentes."
+        },
+        "time": {
+          "title": "Economia de Tempo",
+          "description": "Libere os agentes para focar no fechamento de negócios, não em tarefas administrativas."
+        }
       }
     },
     "KPIs": {
@@ -204,11 +226,26 @@
       "title": "Como Funciona",
       "description": "Automação perfeita desde a primeira chamada até a visita agendada.",
       "steps": {
-        "1": { "title": "Lead Liga", "description": "Cliente potencial liga para o número da sua agência" },
-        "2": { "title": "IA Atende", "description": "T_Imob atende e engaja em conversa natural" },
-        "3": { "title": "Qualificação", "description": "IA avalia necessidades e requisitos do imóvel" },
-        "4": { "title": "Agendar Visita", "description": "Reserva horário diretamente no seu calendário" },
-        "5": { "title": "Atualização do CRM", "description": "Todos os dados sincronizados automaticamente com seus sistemas" }
+        "1": {
+          "title": "Lead Liga",
+          "description": "Cliente potencial liga para o número da sua agência"
+        },
+        "2": {
+          "title": "IA Atende",
+          "description": "T_Imob atende e engaja em conversa natural"
+        },
+        "3": {
+          "title": "Qualificação",
+          "description": "IA avalia necessidades e requisitos do imóvel"
+        },
+        "4": {
+          "title": "Agendar Visita",
+          "description": "Reserva horário diretamente no seu calendário"
+        },
+        "5": {
+          "title": "Atualização do CRM",
+          "description": "Todos os dados sincronizados automaticamente com seus sistemas"
+        }
       }
     },
     "CTA": {

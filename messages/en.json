@@ -93,6 +93,10 @@
       "zcom": {
         "category": "Web Application",
         "description": "A scalable platform for a Brazilian ISP specializing in 100% fiber optic internet and TV services. The application features a robust customer portal for managing subscriptions and accessing support. It also integrates tools for real-time network monitoring and provides an analytics dashboard to track service performance and reliability."
+      },
+      "oliveto": {
+        "category": "Web Application",
+        "description": "An institutional web platform for a firm specializing in Forensic Accounting, Auditing, and Business Consulting. The application organizes high-complexity technical services, such as Valuation and Judicial Calculations, streamlining navigation for legal professionals and corporate clients. The project highlights the partners' expertise through a dynamic content hub and was developed with a focus on performance and SEO to consolidate the brand's digital presence in the Londrina region."
       }
     }
   },
@@ -182,12 +186,30 @@
       "title": "Powerful Features",
       "description": "Everything you need to transform your real estate agency operations.",
       "items": {
-        "capture": { "title": "24/7 Lead Capture", "description": "Never miss a call. Our AI answers every inquiry, day or night." },
-        "conversations": { "title": "Natural Conversations", "description": "Human-like interactions that build trust with potential clients." },
-        "scheduling": { "title": "Automatic Scheduling", "description": "Schedule property visits directly in your calendar system." },
-        "qualification": { "title": "Lead Qualification", "description": "Intelligent filtering to prioritize high-value opportunities." },
-        "crm": { "title": "CRM Integration", "description": "Seamlessly sync with your existing real estate tools." },
-        "time": { "title": "Time Savings", "description": "Free up agents to focus on closing deals, not admin tasks." }
+        "capture": {
+          "title": "24/7 Lead Capture",
+          "description": "Never miss a call. Our AI answers every inquiry, day or night."
+        },
+        "conversations": {
+          "title": "Natural Conversations",
+          "description": "Human-like interactions that build trust with potential clients."
+        },
+        "scheduling": {
+          "title": "Automatic Scheduling",
+          "description": "Schedule property visits directly in your calendar system."
+        },
+        "qualification": {
+          "title": "Lead Qualification",
+          "description": "Intelligent filtering to prioritize high-value opportunities."
+        },
+        "crm": {
+          "title": "CRM Integration",
+          "description": "Seamlessly sync with your existing real estate tools."
+        },
+        "time": {
+          "title": "Time Savings",
+          "description": "Free up agents to focus on closing deals, not admin tasks."
+        }
       }
     },
     "KPIs": {
@@ -204,11 +226,26 @@
       "title": "How It Works",
       "description": "Seamless automation from first call to scheduled visit.",
       "steps": {
-        "1": { "title": "Lead Calls In", "description": "Potential client calls your agency number" },
-        "2": { "title": "AI Answers", "description": "T_Imob picks up and engages in natural conversation" },
-        "3": { "title": "Qualification", "description": "AI assesses needs and property requirements" },
-        "4": { "title": "Schedule Visit", "description": "Books appointment directly in your calendar" },
-        "5": { "title": "CRM Update", "description": "All data automatically synced to your systems" }
+        "1": {
+          "title": "Lead Calls In",
+          "description": "Potential client calls your agency number"
+        },
+        "2": {
+          "title": "AI Answers",
+          "description": "T_Imob picks up and engages in natural conversation"
+        },
+        "3": {
+          "title": "Qualification",
+          "description": "AI assesses needs and property requirements"
+        },
+        "4": {
+          "title": "Schedule Visit",
+          "description": "Books appointment directly in your calendar"
+        },
+        "5": {
+          "title": "CRM Update",
+          "description": "All data automatically synced to your systems"
+        }
       }
     },
     "CTA": {
