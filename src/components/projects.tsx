@@ -73,7 +73,7 @@ export function Projects() {
       description: t("items.oliveto.description"),
       tags: ["React", "tailwind", "Next.js"],
       logoUrl: "/projects/oliveto.png", // Ajuste o nome do arquivo se necessário
-      url: "https://oliveto-delta.vercel.app/",
+      url: "https://olivetocontabilidade.com/",
       color: "#1AFF9B",
     },
   ];
