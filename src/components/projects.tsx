@@ -64,7 +64,7 @@ export function Projects() {
       description: t("items.zcom.description"),
       tags: ["React", "tailwind", "Next.js"],
       logoUrl: "/projects/zcom.png",
-      url: "https://www.zcomprovedor.com.br/desenvolvimento",
+      url: "https://www.zcomprovedor.com.br",
       color: "#0E46B9",
     },
     {
