@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "tyou-landing": {
+      "development": {
+        "fallback": "tyou-landing.vercel.app"
+      }
+    },
+    "core-limao-ui": {
+      "routing": [
+        {
+          "paths": ["/app/:path*"]
+        }
+      ]
+    }
+  }
+}
