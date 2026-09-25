@@ -1,0 +1,195 @@
+/* T_YOU design system — ported from the claude.ai/design project
+   "t-you-design-system". Tokens are scoped to .ty-landing instead of :root
+   because names like --text-sm collide with Tailwind v4 theme variables
+   used by the rest of the app. */
+
+/* ── Fonts ─────────────────────────────────────────────────────────────── */
+@font-face{font-family:"Tactic Sans";src:url("/fonts/tyou/TacticSansExd-Thn.otf") format("opentype");font-weight:100;font-style:normal;font-display:swap}
+@font-face{font-family:"Tactic Sans";src:url("/fonts/tyou/TacticSansExd-Lgt.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Tactic Sans";src:url("/fonts/tyou/TacticSansExd-Reg.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Tactic Sans";src:url("/fonts/tyou/TacticSansExd-Med.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Tactic Sans";src:url("/fonts/tyou/TacticSansExd-Bld.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Tactic Sans";src:url("/fonts/tyou/TacticSansExd-Blk.otf") format("opentype");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Tactic Sans";src:url("/fonts/tyou/TacticSansExd-Ult.otf") format("opentype");font-weight:900;font-style:normal;font-display:swap}
+
+@font-face{font-family:"Neue Plak";src:url("/fonts/tyou/NeuePlak-Thin.ttf") format("truetype");font-weight:100;font-style:normal;font-display:swap}
+@font-face{font-family:"Neue Plak";src:url("/fonts/tyou/NeuePlak-Light.ttf") format("truetype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Neue Plak";src:url("/fonts/tyou/NeuePlak-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Neue Plak";src:url("/fonts/tyou/NeuePlak-SemiBold.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Neue Plak";src:url("/fonts/tyou/NeuePlak-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+
+/* ── Tokens ────────────────────────────────────────────────────────────── */
+.ty-landing{
+  /* Palette — MANUAL DE MARCA - T-YOU, p.3 */
+  --tyou-graphite:#4C4E53;
+  --tyou-gray:#767678;
+  --tyou-teal:#00A5B4;
+  --tyou-white:#FEFEFE;
+
+  --graphite-900:#22242A;
+  --graphite-800:#2E3035;
+  --graphite-700:#3B3D43;
+  --graphite-600:#4C4E53;
+  --graphite-500:#5D5F65;
+  --graphite-400:#767678;
+  --graphite-300:#9A9A9C;
+  --graphite-200:#C6C6C8;
+  --graphite-100:#E4E4E5;
+  --graphite-050:#F2F2F3;
+
+  --teal-700:#00707B;
+  --teal-600:#008894;
+  --teal-500:#00A5B4;
+  --teal-400:#2FBCC7;
+  --teal-300:#7FD6DC;
+  --teal-200:#BFEBEE;
+  --teal-100:#E5F7F8;
+
+  --surface-page:var(--tyou-white);
+  --surface-page-inverse:var(--graphite-900);
+  --surface-card:#FFFFFF;
+  --surface-card-inverse:var(--graphite-700);
+  --surface-sunken:var(--graphite-050);
+  --surface-brand:var(--tyou-graphite);
+  --surface-accent:var(--tyou-teal);
+  --surface-accent-soft:var(--teal-100);
+
+  --text-heading:var(--graphite-900);
+  --text-body:var(--graphite-700);
+  --text-muted:var(--graphite-400);
+  --text-inverse:var(--tyou-white);
+  --text-inverse-muted:var(--graphite-200);
+  --text-accent:var(--teal-600);
+  --text-on-accent:var(--tyou-white);
+
+  --border-subtle:var(--graphite-100);
+  --border-default:var(--graphite-200);
+  --border-strong:var(--graphite-400);
+  --border-inverse:rgba(254,254,254,.18);
+  --border-accent:var(--tyou-teal);
+  --rule-hairline:1px;
+
+  --gradient-graphite:linear-gradient(120deg,#5E6B6C 0%,#4C4E53 45%,#33353B 100%);
+  --gradient-light:linear-gradient(120deg,#E9F7F8 0%,#FFFFFF 40%,#EDEDEE 100%);
+  --gradient-teal-glow:radial-gradient(60% 80% at 25% 30%,rgba(0,165,180,.55) 0%,rgba(0,165,180,0) 70%);
+
+  --focus-ring:0 0 0 3px rgba(0,165,180,.45);
+
+  /* Typography */
+  --font-display:"Tactic Sans",system-ui,sans-serif;
+  --font-text:"Neue Plak",Helvetica,Arial,sans-serif;
+  --font-mono:ui-monospace,"SFMono-Regular",Menlo,monospace;
+
+  --weight-regular:400;
+  --weight-medium:500;
+  --weight-semibold:600;
+  --weight-bold:700;
+
+  --text-3xs:11px;
+  --text-2xs:12px;
+  --text-xs:13px;
+  --text-sm:14px;
+  --text-md:16px;
+  --text-lg:18px;
+  --text-xl:22px;
+  --text-2xl:28px;
+  --text-3xl:36px;
+  --text-4xl:48px;
+  --text-5xl:64px;
+
+  --leading-tight:1.05;
+  --leading-snug:1.2;
+  --leading-normal:1.5;
+  --leading-relaxed:1.65;
+
+  --tracking-wordmark:.34em;
+  --tracking-eyebrow:.22em;
+  --tracking-wide:.08em;
+  --tracking-display:-.02em;
+
+  --type-body:var(--weight-regular) var(--text-md)/var(--leading-relaxed) var(--font-text);
+  --type-body-sm:var(--weight-regular) var(--text-sm)/var(--leading-normal) var(--font-text);
+  --type-label:var(--weight-semibold) var(--text-xs)/1.3 var(--font-text);
+
+  /* Spacing */
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+  --tap-min:44px;
+  --control-h-sm:32px;
+  --control-h-md:40px;
+  --control-h-lg:48px;
+
+  /* Radius */
+  --radius-xs:2px;
+  --radius-sm:2px;
+
+  /* Elevation */
+  --z-toast:50;
+
+  /* Motion */
+  --duration-instant:80ms;
+  --duration-fast:140ms;
+  --duration-base:220ms;
+  --ease-standard:cubic-bezier(.2,0,.2,1);
+  --transition-control:background-color var(--duration-fast) var(--ease-standard),color var(--duration-fast) var(--ease-standard),border-color var(--duration-fast) var(--ease-standard),box-shadow var(--duration-fast) var(--ease-standard);
+  --press-scale:.985;
+}
+
+/* ── Base ──────────────────────────────────────────────────────────────── */
+html:has(.ty-landing){scroll-behavior:smooth}
+.ty-landing{font:var(--type-body);color:var(--text-body);background:var(--surface-page);-webkit-font-smoothing:antialiased}
+.ty-landing *,.ty-landing *::before,.ty-landing *::after{box-sizing:border-box}
+.ty-landing :where(h1,h2,h3){margin:0;color:var(--text-heading);font-family:var(--font-display);letter-spacing:var(--tracking-display)}
+.ty-landing :where(p){margin:0;text-wrap:pretty}
+.ty-landing :is(button,input,textarea){font-family:inherit;font-size:inherit}
+.ty-landing a{color:var(--text-accent);text-decoration:none;border-bottom:1px solid transparent;transition:var(--transition-control)}
+.ty-landing a:hover{color:var(--teal-700);border-bottom-color:currentColor}
+.ty-landing :is(a,button,input,textarea):focus-visible{outline:none;box-shadow:var(--focus-ring)}
+.ty-landing ::selection{background:var(--teal-200);color:var(--graphite-900)}
+@media (pointer:coarse){.ty-landing :where(.ty-btn,.ty-input){min-height:var(--tap-min)}}
+@media (prefers-reduced-motion:reduce){
+  .ty-landing *,.ty-landing *::before,.ty-landing *::after{animation-duration:1ms!important;animation-iteration-count:1!important;transition-duration:1ms!important}
+  html:has(.ty-landing){scroll-behavior:auto}
+}
+
+/* ── Button ────────────────────────────────────────────────────────────── */
+.ty-btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);font-family:var(--font-text);font-weight:var(--weight-semibold);letter-spacing:var(--tracking-wide);text-transform:uppercase;border:1px solid transparent;border-radius:var(--radius-sm);cursor:pointer;transition:var(--transition-control),transform var(--duration-instant) var(--ease-standard);text-decoration:none;white-space:nowrap}
+.ty-btn:active{transform:scale(var(--press-scale))}
+.ty-btn--md{height:var(--control-h-md);padding:0 var(--space-5);font-size:var(--text-2xs)}
+.ty-btn--lg{height:var(--control-h-lg);padding:0 var(--space-6);font-size:var(--text-xs)}
+.ty-landing .ty-btn--primary{background:var(--tyou-teal);color:var(--text-on-accent)}
+.ty-landing .ty-btn--primary:hover{background:var(--teal-600);color:var(--text-on-accent)}
+.ty-landing .ty-btn--primary:active{background:var(--teal-700)}
+.ty-btn--block{width:100%}
+.ty-btn--chamfer{border-radius:0;clip-path:polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%)}
+
+/* ── Field ─────────────────────────────────────────────────────────────── */
+.ty-field{display:flex;flex-direction:column;gap:var(--space-2)}
+.ty-field__label{font:var(--type-label);letter-spacing:var(--tracking-wide);text-transform:uppercase;color:var(--text-muted)}
+.ty-input,.ty-textarea{width:100%;font:var(--type-body-sm);color:var(--text-heading);background:var(--surface-card);border:1px solid var(--border-default);border-radius:var(--radius-sm);transition:var(--transition-control)}
+.ty-input{height:var(--control-h-md);padding:0 var(--space-3)}
+.ty-textarea{padding:var(--space-3);min-height:96px;resize:vertical}
+.ty-input::placeholder,.ty-textarea::placeholder{color:var(--graphite-300)}
+.ty-input:hover,.ty-textarea:hover{border-color:var(--border-strong)}
+.ty-input:focus,.ty-textarea:focus{border-color:var(--tyou-teal);outline:none}
+
+/* ── Graphics ──────────────────────────────────────────────────────────── */
+.ty-glow{position:relative;isolation:isolate}
+.ty-glow::before{content:"";position:absolute;inset:0;background:var(--gradient-teal-glow);pointer-events:none;z-index:-1}
+.ty-glow-br::before{background:radial-gradient(55% 75% at 82% 88%,rgba(0,165,180,.5) 0%,rgba(0,165,180,0) 70%)}
+.ty-chip-corner{position:relative;overflow:hidden}
+.ty-chip-corner::after{content:"";position:absolute;top:0;right:0;width:var(--chip,22px);height:var(--chip,22px);background:var(--chip-ink,var(--tyou-teal));clip-path:polygon(100% 0,100% 100%,0 0);pointer-events:none}
+.ty-underscore-inline{display:inline-flex;align-items:center;gap:var(--space-3,12px)}
+.ty-underscore-inline::before{content:"";width:var(--rule-w,32px);height:3px;background:var(--rule-ink,var(--tyou-teal));flex:none}
+.ty-numeral{font-family:var(--font-display);font-weight:200;font-size:var(--text-4xl,52px);line-height:.85;color:var(--graphite-200);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.ty-numeral-accent{color:var(--teal-300)}
+@keyframes ty-drift{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(2%,-2%,0) scale(1.06)}}
+.ty-glow-drift::before{animation:ty-drift 18s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.ty-glow-drift::before{animation:none}}
+
+/* ── Utilities ─────────────────────────────────────────────────────────── */
+.ty-landing .ty-skip-link{position:absolute;top:0;left:0;z-index:var(--z-toast);transform:translateY(-120%);display:inline-flex;align-items:center;height:var(--control-h-md);padding:0 var(--space-4);background:var(--tyou-teal);color:var(--text-on-accent);font:var(--type-label);letter-spacing:var(--tracking-wide);text-transform:uppercase;border-bottom:0;transition:transform var(--duration-fast) var(--ease-standard)}
+.ty-landing .ty-skip-link:focus{transform:translateY(0);color:var(--text-on-accent)}

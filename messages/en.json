@@ -10,116 +10,6 @@
     "getStarted": "Contact Us",
     "getStartedLinkMessage": "Hello, I would like to know more about your services"
   },
-  "Hero": {
-    "tagline": "Getting you <highlight>on</highlight>line",
-    "title": "Transforming <highlight>Visions</highlight> into Digital Reality",
-    "description": "Custom software development to propel your business forward. We build scalable, innovative solutions that drive real results.",
-    "ctaServices": "Discover Our Services",
-    "ctaProjects": "View Projects",
-    "stats": {
-      "projects": "Projects Delivered",
-      "satisfaction": "Client Satisfaction",
-      "support": "Support Available"
-    }
-  },
-  "About": {
-    "subtitle": "About T-YOU",
-    "title": "Building the Future, One Line of Code at a Time",
-    "description1": "T-YOU is a technology solutions company dedicated to transforming businesses through innovative software development. We combine technical expertise with strategic thinking to deliver solutions that drive real business value.",
-    "description2": "Our team of experienced developers, designers, and strategists work collaboratively to understand your unique challenges and create custom solutions that exceed expectations.",
-    "values": {
-      "innovation": "Innovation-driven approach",
-      "agile": "Agile development methodology",
-      "transparent": "Transparent communication",
-      "quality": "Quality-first mindset",
-      "partnerships": "Long-term partnerships",
-      "improvement": "Continuous improvement"
-    },
-    "stats": {
-      "experience": "Years Experience",
-      "team": "Team Members",
-      "companies": "Companies Served",
-      "commitment": "Commitment"
-    }
-  },
-  "Services": {
-    "subtitle": "What We Do",
-    "title": "Comprehensive Technology Services",
-    "description": "From concept to deployment, we provide end-to-end software development services that transform your ideas into powerful digital solutions.",
-    "items": {
-      "customDev": {
-        "title": "Custom Software Development",
-        "description": "Tailored solutions built from the ground up to meet your unique business requirements and scale with your growth."
-      },
-      "mobileApps": {
-        "title": "Mobile Applications",
-        "description": "Native and cross-platform mobile apps that deliver exceptional user experiences on iOS and Android."
-      },
-      "cloud": {
-        "title": "Cloud Solutions",
-        "description": "Scalable cloud infrastructure and migration services to optimize performance and reduce operational costs."
-      },
-      "security": {
-        "title": "Cybersecurity",
-        "description": "Comprehensive security audits and implementation to protect your digital assets and customer data."
-      },
-      "api": {
-        "title": "API Development",
-        "description": "Robust and well-documented APIs that enable seamless integration and data exchange between systems."
-      },
-      "consulting": {
-        "title": "Consulting & Strategy",
-        "description": "Expert guidance on technology decisions, architecture design, and digital transformation initiatives."
-      }
-    }
-  },
-  "Projects": {
-    "subtitle": "Our Work",
-    "title": "Featured Projects",
-    "viewSite": "View Live Site",
-    "items": {
-      "brasoul": {
-        "category": "Web Application",
-        "description": "An institutional web platform for a natural cosmetics brand inspired by Amazonian biodiversity. The site features dynamic product showcases for its hair care lines (Radiant, Sublime) and integrates real-time inventory management. It highlights the brand's commitment to sustainability and includes an analytics dashboard to track customer engagement."
-      },
-      "ra": {
-        "category": "Web Application",
-        "description": "A comprehensive web platform for an established automotive dealer with 29 years of market experience. The application showcases a curated inventory of new and high-quality used vehicles, integrated with a real-time stock management system. Key features include detailed financing options and a customer testimonial section to build trust and emphasize quality service."
-      },
-      "triorb": {
-        "category": "Web Application",
-        "description": "A scalable web platform specializing in high-realism technological visualization for construction and real estate projects. The application delivers immersive AR/VR experiences, including interactive 360° virtual tours and 3D humanized floor plans. It serves as a dynamic portfolio for projects like Residencial Renascence and Terras de Santo Antônio, with a backend to gather insights on user engagement."
-      },
-      "zcom": {
-        "category": "Web Application",
-        "description": "A scalable platform for a Brazilian ISP specializing in 100% fiber optic internet and TV services. The application features a robust customer portal for managing subscriptions and accessing support. It also integrates tools for real-time network monitoring and provides an analytics dashboard to track service performance and reliability."
-      },
-      "oliveto": {
-        "category": "Web Application",
-        "description": "An institutional web platform for a firm specializing in Forensic Accounting, Auditing, and Business Consulting. The application organizes high-complexity technical services, such as Valuation and Judicial Calculations, streamlining navigation for legal professionals and corporate clients. The project highlights the partners' expertise through a dynamic content hub and was developed with a focus on performance and SEO to consolidate the brand's digital presence in the Londrina region."
-      }
-    }
-  },
-  "Contact": {
-    "subtitle": "Get In Touch",
-    "title": "Let's Build Something Amazing Together",
-    "description": "Ready to transform your vision into reality? Contact us today to discuss your project and discover how we can help your business thrive.",
-    "email": "Email",
-    "social": "Social Media",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "company": "Company",
-      "message": "Message",
-      "submit": "Send via WhatsApp",
-      "placeholders": {
-        "name": "Your name",
-        "email": "your@email.com",
-        "company": "Your company name",
-        "message": "Tell us about your project..."
-      }
-    }
-  },
   "Footer": {
     "tagline": "Getting you <highlight>on</highlight>line",
     "description": "Transforming visions into digital reality through innovative software development.",
@@ -253,6 +143,193 @@
       "description": "Join forward-thinking real estate agencies already using AI to capture more leads and close more deals.",
       "button": "Learn More",
       "ctaLinkMessage": "I would like to know more about T_Imob"
+    }
+  },
+  "Landing": {
+    "meta": {
+      "skipLink": "Skip to contact",
+      "homeLabel": "T_YOU, home page",
+      "language": "Language"
+    },
+    "nav": {
+      "idea": "The idea",
+      "process": "How it works",
+      "portfolio": "Portfolio",
+      "case": "A case",
+      "audience": "Who it's for",
+      "cta": "Let's talk"
+    },
+    "hero": {
+      "kicker": "Tailor-made software",
+      "title": "Your business is like no other. Your software shouldn't be either.",
+      "lead": "We take the measure of your process before writing the first line of code. It's not a factory. It's tailoring.",
+      "ctaPrimary": "Let's talk about your problem",
+      "ctaSecondary": "See a real case",
+      "tape": [
+        "Measure",
+        "Fit",
+        "Adjust"
+      ]
+    },
+    "idea": {
+      "eyebrow": "The idea",
+      "title": "Off-the-shelf software almost fits. And almost fitting doesn't fit.",
+      "p1": "Every ready-made system was designed for the average of a market. Your process isn't the average. So you bend your operation to the system, build spreadsheets on the side, train people to work around what the tool can't do, and call that normal.",
+      "p2": "We go the other way. First we understand how your business really works, including the parts nobody ever documented. Then we build the piece around that.",
+      "p3": "It's close work, with <strong>only a few clients at a time</strong>. You can't take the measure of ten companies in the same month."
+    },
+    "versus": {
+      "eyebrow": "Two ways of doing the same thing",
+      "factory": {
+        "label": "Software factory",
+        "items": [
+          "Developers come and go depending on the month's schedule",
+          "Requirements gathered through a form, with nobody looking at the operation",
+          "Delivery by volume, reusing the same mold",
+          "After deploy, you open a ticket and wait"
+        ]
+      },
+      "tyou": {
+        "label": "T_YOU tailoring",
+        "items": [
+          "The same people from start to finish, and you know their names",
+          "Diagnosis inside your operation, before any proposal",
+          "A piece cut to your process, the way it already works",
+          "After delivery the relationship continues, with adjustments on demand"
+        ]
+      }
+    },
+    "process": {
+      "eyebrow": "How it works",
+      "title": "Measure, cut, adjust.",
+      "steps": [
+        {
+          "title": "Measure",
+          "body": "We sit down with the people who run the process and watch how it happens today. That's diagnosis, not requirements gathering. A large part of the value is translating what you feel is wrong into something that can be built."
+        },
+        {
+          "title": "Fit",
+          "body": "The software adapts to your process. If your operation has a step that no system on the market expects, it goes in exactly as it is. You don't twist yourself to fit another company's mold."
+        },
+        {
+          "title": "Adjust",
+          "body": "The piece doesn't die at delivery. The business changes, the piece follows. We keep caring for it, fixing it and growing with you, because software nobody maintains ages fast."
+        }
+      ]
+    },
+    "case": {
+      "eyebrow": "A case",
+      "name": "AI-powered recruiting",
+      "title": "A screening agent built around the way a recruiting firm works.",
+      "lead": "The operation lived in spreadsheets and WhatsApp chats. Instead of taking the spreadsheet away from the end client, we built the agent around it. Recruiters keep working the way they always have, except now reading and outreach happen on their own.",
+      "steps": [
+        {
+          "label": "Step 01",
+          "title": "Job sync",
+          "body": "The end client updates the job spreadsheet in Excel online. From the dashboard, the recruiter triggers a read of the file. New openings are registered and the requirements of existing ones are updated."
+        },
+        {
+          "label": "Step 02",
+          "title": "Campaign and outreach",
+          "body": "The recruiter picks a message template and sends the campaign to that opening's candidate pool. The conversation starts on its own, and whoever replies arrives already screened."
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Who it's for",
+      "yesTitle": "We're right for you if",
+      "yes": [
+        "Your company has its own process, built over years, and it's what sets you apart",
+        "Your operation lives in spreadsheets today, and everyone knows it won't scale",
+        "You've already paid for a ready-made system and it didn't fit",
+        "You want to talk to the people who build, not an account manager"
+      ],
+      "noTitle": "We're not right for you if",
+      "no": [
+        "The deciding factor is the lowest price",
+        "You need something generic live next week",
+        "An off-the-shelf system already solves your case, and solves it well"
+      ],
+      "note": "We take on only a few projects at a time. It's the only way to do it well."
+    },
+    "portfolio": {
+      "eyebrow": "Portfolio",
+      "aside": "What's running today",
+      "viewCase": "See the case",
+      "viewSite": "Visit the site",
+      "note": "Each piece was built for a specific process. None of them would fit the company next door without adjustment.",
+      "items": {
+        "recruiting": {
+          "category": "AI agent",
+          "title": "AI-powered recruiting",
+          "description": "A screening agent that reads the client's job spreadsheet and runs the first conversation with candidates over WhatsApp."
+        },
+        "brasoul": {
+          "category": "Cosmetics",
+          "description": "Institutional website in five languages for a natural cosmetics brand, with a catalog by product line and direct WhatsApp contact."
+        },
+        "ra": {
+          "category": "Car dealership",
+          "description": "Online showroom for a dealership with 29 years in business, with inventory, financing simulation and real customer reviews."
+        },
+        "oliveto": {
+          "category": "Forensic accounting",
+          "description": "Website for a forensic accounting and audit firm, with a services area, testimonials from partner lawyers and an admin panel."
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Frequently asked questions",
+      "items": [
+        {
+          "q": "How much does it cost?",
+          "a": "It depends on the size of the problem, and we won't guess. First we understand what needs to be built, then we talk numbers. No proposal goes out before the diagnosis."
+        },
+        {
+          "q": "How long does it take?",
+          "a": "It depends on what the measuring reveals. What we avoid is the year-long project that only shows results at the end. The idea is to get the first useful part into production quickly and grow from there."
+        },
+        {
+          "q": "What happens after delivery?",
+          "a": "The relationship continues. The piece is maintained and adjusted as the business changes. If you want a project that ends and disappears, we're probably not the right fit."
+        },
+        {
+          "q": "I already have a system running. Can we work together?",
+          "a": "Yes, and it's common. A good part of the work is building the missing piece around what you already use, without forcing anyone to replace everything at once."
+        },
+        {
+          "q": "My process is a bit unusual. Is that a problem?",
+          "a": "It's usually why you're here. A non-standard process is exactly what no off-the-shelf system accepts, and it's where a tailor-made piece is worth the most."
+        }
+      ]
+    },
+    "contact": {
+      "kicker": "Let's talk",
+      "title": "Tell us the problem. We'll get back to you.",
+      "lead": "You don't need a ready scope or to know what you want built. Just describe what's holding you back today.",
+      "whatsapp": "WhatsApp",
+      "form": {
+        "name": "Name",
+        "company": "Company",
+        "contact": "Email or WhatsApp",
+        "problem": "What's holding you back today",
+        "problemPlaceholder": "E.g. we track 300 orders a month in a spreadsheet and nobody knows where each one stopped",
+        "submit": "Start the conversation"
+      },
+      "sent": {
+        "title": "Got it.",
+        "body": "We opened WhatsApp with your message ready. Just send it there and we'll reply."
+      },
+      "whatsappMessage": "Hi! My name is *{name}*.\n\nCompany: {company}\nContact: {contact}\n\nWhat's holding us back:\n{problem}"
+    },
+    "footer": {
+      "tagline": "Tailor-made software, one client at a time.",
+      "contact": "Contact",
+      "social": "Social",
+      "onPage": "On this page",
+      "idea": "The idea",
+      "case": "The AI recruiting case",
+      "bottom": "T_YOU. Getting you online."
     }
   }
 }
