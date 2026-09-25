@@ -157,7 +157,9 @@
       "portfolio": "Portfolio",
       "case": "A case",
       "audience": "Who it's for",
-      "cta": "Let's talk"
+      "signIn": "Sign in",
+      "menuOpen": "Open menu",
+      "menuClose": "Close menu"
     },
     "hero": {
       "kicker": "Tailor-made software",
